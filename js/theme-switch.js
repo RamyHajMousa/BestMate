@@ -47,4 +47,8 @@ const toggleTheme = () => {
    });
 }
 
-export { initializeTheme, toggleTheme };
+function switchTheme() {
+     initializeTheme();
+     toggleTheme();
+}
+export default switchTheme;
