@@ -1,0 +1,141 @@
+#main-header {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: var(--secondary-color);
+}
+
+#main-header .logo-container h1 {
+   text-align: center;
+}
+
+#main-header a{
+      text-decoration: none;
+}
+
+#main-nav ul {
+   padding: 0;
+   margin-top: -1rem;
+   align-items: center;
+   list-style-type: none;
+}
+
+#main-nav li {
+   margin-bottom: 0.5rem;
+}
+
+#main-nav a {
+   font-weight: 700;
+   text-decoration: none;
+   color: var(--text-primary-color);
+}
+
+/* Navigation Log In Button */
+#nav-login-btn {
+   display: block;
+   border: none;
+   cursor: pointer;
+   font-weight: 700;
+   border-radius: 4px;
+   padding: 0.5rem 1.5rem;
+   color: var(--text-primary-color);
+   background-color: var(--accent-color);
+}
+
+/* Hamburger button */
+.hamburger {
+   display: inline-block;
+   position: absolute;
+   right: 0;
+   border: none;
+   cursor: pointer;
+   margin: 1.7rem 1rem 0 0;
+   background-color: transparent;
+}
+
+.hamburger span {
+   display: block;
+   width: 25px;
+   height: 3px;
+   margin: 4px 0;
+   background-color: var(--text-primary-color);
+   transition: all 0.3s ease, opacity 0.3s ease;
+}
+
+/* Hamburger to X transition */
+.hamburger.clicked span:nth-child(1) {
+   transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger.clicked span:nth-child(2) {
+   opacity: 0;
+}
+
+.hamburger.clicked span:nth-child(3) {
+   transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Hide navigation menu on mobile */
+.nav-collapsed ul {
+   display: none;
+}
+
+/* Show navigation menu when expanded */
+.nav-expanded ul {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+/* ========== Hover Effects ==========*/
+
+#main-nav li:not(:last-child) a:hover {
+   color: var(--accent-color);
+   transition: color 0.3s ease-in-out;
+}
+
+#nav-login-btn:hover {
+   color: var(--text-primary-color);
+   background-color: var(--accent-color-hover);
+   transition: background-color 0.3s ease-in-out;
+}
+
+.hamburger:hover span {
+   background-color: var(--accent-color-hover);
+}
+
+/*========== Media Queries ==========*/
+@media (min-width: 768px) {
+
+   #main-header {
+      padding: 0 2rem;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+   }
+
+   /* Hide Hamburger button */
+   .hamburger {
+      display: none;
+   }
+
+   /* Navigation */
+   #main-nav.nav-collapsed ul,
+   #main-nav.nav-expanded ul {
+      display: flex;
+      flex-direction: row;
+      margin: 0;
+   }
+
+   #main-nav a {
+      margin: 0 1rem;
+   }
+
+}
+
+/* Mobile Landscape Layout Styles */
+@media (max-height: 450px) {
+   /* #main-header {
+      height: 30vh;
+   } */
+}

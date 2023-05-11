@@ -1,0 +1,131 @@
+main h1 {
+     text-align: center;
+}
+
+/* ==========Search Section ==========*/
+/* Search bar container */
+#search-form {
+     display: flex;
+     margin: 2rem auto;
+     padding: 0 1rem;
+     min-width: 300px;
+     max-width: 500px;
+}
+
+/* Search input */
+#search-input {
+     background-color: white;
+     color: black;
+     border: none;
+     border-radius: 25px;
+     box-shadow: 0 5px 3px rgba(0, 0, 0, 0.2);
+     font-size: 1rem;
+     /* height: 50px; */
+     padding: 0 20px;
+     width: 100%;
+}
+
+#search-input:focus {
+     outline: none;
+     border: 2px solid var(--accent-color);
+}
+
+/* Search button */
+#search-btn {
+     background-color: var(--accent-color);
+     border: none;
+     border-radius: 25px;
+     color: white;
+     cursor: pointer;
+     font-size: 1rem;
+     height: 50px;
+     /* margin: 3px 0 3px -97px; */
+     margin-left: -87px;
+     width: 100px;
+     transition: background-color 0.3s ease-in-out;
+}
+
+/* Search button hover */
+#search-btn:hover {
+     background-color: var(--accent-color-hover);
+}
+
+/* ========== Books Section ========== */
+
+#library-container h2{
+     text-align: center;
+}
+
+.books-container {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+}
+
+.book-card {
+     /* font-size: 0.8rem; */
+     display: flex;
+     flex-direction: column;
+     flex-basis: 12rem;
+     margin: 7px;
+     border-radius: 7px;
+     padding-bottom: 0.5rem;
+     background-color: var(--secondary-color);
+     border: 1px solid var(--dark-color);
+     transition: all 0.3s ease-in-out;
+}
+
+.book-card img {
+     width: 100%;
+     height: 15rem;
+     border-top-right-radius: 7px;
+     border-top-left-radius: 7px;
+     /* To center 'bookImage.alt' in case missing image url... */
+     display: flex;
+     align-items: center;
+     text-align: center;
+}
+
+.book-title {
+     /* text-align: center; */
+     margin: 0.5rem;
+}
+
+.book-card p {
+     font-size: 0.8rem;
+     margin: 0.2rem 0.5rem;
+}
+
+/* Error message style */
+.error-container {
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     margin: 0 1rem;
+
+}
+
+.error-container h2 {
+     color: var(--accent-color);
+}
+
+.book-card:hover {
+     cursor: pointer;
+     box-shadow: 0 0 5px var(--light-color);
+     transform: scale(1.05);
+     /* transition: border-color 0.2s ease; */
+     /* transition: box-shadow 0.2s ease; */
+}
+
+/* ++++++++++ Desktop Styles ++++++++++*/
+@media (min-width: 1024px) {
+     #searchpage-content {
+          max-width: 960px;
+          margin: auto;
+     }
+}
+
+/* Hide Books btn from the navigation bar */
+#main-nav ul li:nth-child(2) {
+     display: none;
+}

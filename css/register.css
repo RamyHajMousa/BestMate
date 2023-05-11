@@ -1,0 +1,67 @@
+/* Sign Up section */
+.sign-up {
+   padding: 2rem;
+   margin: 2rem auto;
+   max-width: 400px;
+   border-radius: 5px;
+   background-color: var(--secondary-color);
+   border: 1px solid var(--dark-color);
+}
+
+.sign-up h2 {
+   margin-bottom: 1rem;
+   text-align: center;
+   color: var(--accent-color);
+}
+
+.sign-up form {
+   display: grid;
+   grid-gap: 1rem;
+}
+
+.sign-up label {
+   font-weight: 700;
+}
+
+.sign-up input {
+   padding: 0.5rem;
+   border-radius: 3px;
+   border: 1px solid var(--dark-color);
+}
+
+.sign-up input:focus {
+   outline: none;
+   border: 2px solid var(--accent-color);
+}
+
+.sign-up #sign-up-btn {
+   border: none;
+   cursor: pointer;
+   font-size: 1rem;
+   font-weight: 700;
+   border-radius: 3px;
+   padding: 0.75rem 1.5rem;
+   color: var(--text-primary-color);
+   background-color: var(--accent-color);
+}
+
+.sign-up #sign-up-btn:hover {
+   background-color: var(--accent-color-hover);
+   transition: background-color 0.3s ease-in-out;
+}
+
+/* Log in option */
+.login-option {
+   text-align: center;
+   margin-top: 1rem;
+}
+
+.login-option a {
+   font-weight: 600;
+   color: var(--accent-color);
+   text-decoration: none;
+}
+
+.login-option a:hover {
+   text-decoration: underline;
+}

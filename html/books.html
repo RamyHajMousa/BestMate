@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="icon" href="../assets/images/favicon.png" type="image/png">
+     <link rel="stylesheet" href="../css/reset.css">
+     <link rel="stylesheet" href="../css/site.css">
+     <link rel="stylesheet" href="../css/header.css">
+     <link rel="stylesheet" href="../css/books.css">
+     <link rel="stylesheet" href="../css/book-detailes.css">
+     <link rel="stylesheet" href="../css/footer.css">
+     <link rel="stylesheet" href="../css/theme-switch.css">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <script src="../js/books.js" type="module"></script>
+     <script src="../js/navbar-toggle-btn.js" defer></script>
+     <title>Books List | BestMate</title>
+</head>
+
+<body id="body">
+     <main id="searchpage-content">
+
+          <section class="search-section">
+               <h1>Search for a book</h1>
+               <div class="search-container">
+                    <form id="search-form">
+                         <input type="text" id="search-input" placeholder="Search for a book...">
+                         <input type="submit" id="search-btn" value="Search">
+                    </form>
+               </div>
+          </section>
+
+          <section id="library-container">
+               <h2 id="library-header" class="library-header">Trending Books Today</h2>
+               <div id="books-container" class="books-container">
+                    <!-- Here book cards are displayed... -->
+               </div>
+          </section>
+
+          <section class="popup" id="popup">
+               <div class="popup-content">
+                    <span class="close-btn" id="close-btn">&times;</span>
+                    <h2>Book Title</h2>
+                    <p>Author: John Doe</p>
+                    <p>Genre: Fiction</p>
+                    <p>Description: This is a sample book description.</p>
+               </div>
+          </section>
+
+     </main>
+
+     <!-- <script src="../js/book-detailes.js" defer></script> -->
+</body>
+
+</html>

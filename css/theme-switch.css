@@ -1,0 +1,23 @@
+/* Theme Switch Button */
+
+#theme-switch-button {
+   position: fixed;
+   bottom: 1rem;
+   right: 0;
+   z-index: 10;
+   border: none;
+   cursor: pointer;
+   padding: 0.75rem;
+   border-top-left-radius: 4px;
+   border-bottom-left-radius: 4px;
+   background-color: var(--accent-color);
+}
+
+#theme-switch-button i {
+   color: var(--text-primary-color);
+}
+
+#theme-switch-button:hover {
+   background-color: var(--accent-color-hover);
+   transition: background-color 0.3s ease-in-out;
+}

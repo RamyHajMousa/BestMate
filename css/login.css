@@ -1,0 +1,71 @@
+/* Log In Page */
+.log-in {
+   padding: 2rem;
+   max-width: 400px;
+   border-radius: 5px;
+   margin: 2rem auto;
+   background-color: var(--secondary-color);
+   border: 1px solid var(--dark-color);
+}
+
+.log-in h2 {
+   text-align: center;
+   margin-bottom: 1rem;
+   color: var(--accent-color);
+}
+
+.log-in form {
+   display: grid;
+   grid-gap: 1rem;
+}
+
+.log-in label {
+   font-weight: 700;
+}
+
+.log-in input {
+   padding: 0.5rem;
+   border-radius: 3px;
+   border: 1px solid var(--dark-color);
+}
+
+.log-in input:focus {
+   outline: none;
+   border: 2px solid var(--accent-color);
+}
+
+.log-in #login-btn {
+   border: none;
+   cursor: pointer;
+   font-weight: 700;
+   border-radius: 3px;
+   padding: 0.75rem 1.5rem;
+   color: var(--text-primary-color);
+   background-color: var(--accent-color);
+}
+
+.log-in #login-btn:hover {
+   background-color: var(--accent-color-hover);
+   transition: background-color 0.3s ease-in-out;
+}
+
+/* Sign up option */
+.sign-up-option {
+   text-align: center;
+   margin-top: 1rem;
+}
+
+.sign-up-option a {
+   font-weight: 600;
+   color: var(--accent-color);
+   text-decoration: none;
+}
+
+.sign-up-option a:hover {
+   text-decoration: underline;
+}
+
+/* Hide Log In button in navigation bar */
+#nav-login-btn{
+   display: none;
+}

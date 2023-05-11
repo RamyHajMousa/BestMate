@@ -1,0 +1,27 @@
+#main-footer {
+   padding: 1rem;
+   text-align: center;
+   color: var(--text-primary-color);
+   background-color: var(--secondary-color);
+}
+
+#main-footer ul {
+   padding: 0;
+   list-style-type: none;
+}
+
+#main-footer li {
+   margin-bottom: 0.5rem;
+}
+
+#main-footer a {
+   color: var(--text-primary-color);
+   text-decoration: none;
+}
+
+/* ++++++++++++++++++++ Hover Effects ++++++++++++++++++++*/
+/* Hover effects for footer links*/
+#main-footer a:hover {
+   color: var(--accent-color);
+   transition: color 0.3s ease-in-out;
+}

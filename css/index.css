@@ -1,0 +1,116 @@
+/* Mobile-first CSS for BestMate Home Page */
+
+#homepage-content {
+   padding: 1rem;
+}
+
+#banner {
+   text-align: center;
+   margin-bottom: 2rem;
+}
+
+#banner h2 {
+   margin-bottom: 1rem;
+}
+
+#banner p {
+   margin-bottom: 1.5rem;
+}
+
+.cta-button {
+   font-weight: 700;
+   border-radius: 4px;
+   padding: 1rem 1.5rem;
+   display: inline-block;
+   text-decoration: none;
+   color: var(--text-primary-color);
+   background-color: var(--accent-color);
+}
+
+/* Features */
+#features {
+   display: grid;
+   gap: 1rem;
+   grid-template-columns: 1fr;
+}
+
+.feature {
+   display: flex;
+   align-items: center;
+   text-align: center;
+   padding: 1rem;
+   border-radius: 5px;
+   border: 1px solid var(--dark-color);
+   background-color: var(--secondary-color);
+   /* box-shadow: 2px 2px 5px var(--dark-color); */
+}
+
+/* TODO needs to be fixed */
+.feature .feature-image {
+   width: 48vw;
+   display: none;
+}
+
+.feature .feature-icon {
+   font-size: 4rem;
+   color: var(--accent-color);
+}
+
+.feature .image-right {
+   order: 1;
+   border-top-right-radius: 4px;
+   border-bottom-right-radius: 4px;
+}
+
+.feature .image-left {
+   border-top-left-radius: 4px;
+   border-bottom-left-radius: 4px;
+}
+
+/* Hover effect for call-to-action and hamburger buttons  */
+.cta-button:hover {
+   background-color: var(--accent-color-hover);
+   transition: background-color 0.3s ease-in-out;
+}
+
+/* ++++++++++++++++++++ Tablet Styles ++++++++++++++++++++*/
+@media (min-width: 768px) {
+
+   /* .feature .feature-icon {
+      display: none;
+   } */
+
+   .feature-text {
+      padding: 0 1rem;
+   }
+
+}
+
+/* ++++++++++++++++++++ Desktop Styles ++++++++++++++++++++*/
+@media (min-width: 1024px) {
+   #homepage-content {
+      max-width: 960px;
+      margin: auto;
+   }
+
+   .feature .feature-image {
+      max-width: 480px;
+   }
+}
+
+/* Mobile Landscape Layout Styles */
+@media (max-height: 450px) {
+   /* #banner{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 70vh;
+      
+   } */
+}
+
+/* Hide Home btn in nav bar */
+#main-nav ul li:first-child {
+   display: none;
+}

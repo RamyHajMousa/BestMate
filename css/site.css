@@ -1,0 +1,68 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600;700&display=swap');
+
+/* Colors Palette */
+/* Default Mode = Dark-mode */
+:root {
+   --primary-color: #0e1217;
+   --secondary-color: #1c1f26;
+   --accent-color: #F28482;
+   --accent-color-hover: #fdaa9b;
+   --light-color: #a8b3cf;
+   --dark-color: #a8b3cf33;
+   --text-primary-color: #ffffff;
+   --text-secondary-color: #a8b3cf;
+}
+
+/* Light-mode */
+.light-mode {
+   --primary-color: #f5f5f5;
+   --secondary-color: #e0e0e0;
+   --accent-color: #F28482;
+   --accent-color-hover: #ff9a88;
+   --light-color: #3b3e45;
+   --dark-color: #3b3e4522;
+   --text-primary-color: #333333;
+   --text-secondary-color: #3b3e45;
+}
+
+/* .dark-mode {
+   --primary-color: #0e1217;
+   --secondary-color: #1c1f26;
+   --accent-color: #F28482;
+   --accent-color-hover: #ff9a88;
+   --light-color: #a8b3cf;
+   --dark-color: #a8b3cf33;
+   --text-primary-color: #ffffff;
+   --text-secondary-color: #a8b3cf;
+} */
+
+
+
+/* Main CSS */
+body {
+   color: var(--text-secondary-color);
+   background-color: var(--primary-color);
+   font-family: 'Open Sans', sans-serif;
+   overflow-x: hidden;
+   /* To ensure that all contents cover the whole height in long screens */
+   min-height: 100dvh;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   color: var(--text-primary-color);
+   font-family: 'Montserrat', sans-serif;
+}
+
+span {
+   font-weight: bold;
+   color: var(--accent-color);
+}
