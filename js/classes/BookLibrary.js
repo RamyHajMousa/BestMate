@@ -39,16 +39,15 @@ export class BookLibrary {
 
      //  Create an array of books from fetched data...
      #createBooksArray(data) {
-     return data.map(book => {
-          const key = book.key;
-          const title = book.title ? book.title : 'Unknown';
-          const author = book.author_name ? book.author_name.join(', ') : 'Unknown';
-          const genre = book.subject_facet ? `(${book.subject_facet[0]})` : '';
-          const imageUrl = book.cover_i ? `https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg` : "../../assets/images/no-image.jpg";
-          return new Book(key, title, author, genre, imageUrl);
-     });
-}
-
+          return data.map(book => {
+               const key = book.key;
+               const title = book.title ? book.title : 'Unknown';
+               const author = book.author_name ? book.author_name.join(', ') : 'Un available';
+               const genre = book.subject_facet ? `(${book.subject_facet[0]})` : '';
+               const imageUrl = book.cover_i ? `https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg` : "../../assets/images/no-image.jpg";
+               return new Book(key, title, author, genre, imageUrl);
+          });
+     }
 
      //  Create and display a list of book cards
      #displayBooks(books) {

@@ -7,17 +7,16 @@ export class Book {
           this.imageUrl = imageUrl;
      }
 
-
      async bookDetails(id) {
           const apiUrl = `https://openlibrary.org${id}.json`;
           const data = await this.#fetchData(apiUrl);
-
+          // An array of authors' names...
           let authorNames = [];
           for (const author of data.authors) {
                const name = await this.#authorName(author.author.key);
                authorNames.push(name);
           }
-          
+
           const book = new Book(
                id,
                data.title,
@@ -38,9 +37,6 @@ export class Book {
           return name;
      }
 
-
-
-
      // Fetch data from API...
      async #fetchData(apiUrl) {
           try {
@@ -57,8 +53,8 @@ export class Book {
      }
 
      // Render book details...
-     #renderBook(book) { 
-          const bookFigure  = document.querySelector('.book-cover');
+     #renderBook(book) {
+          const bookFigure = document.querySelector('.book-cover');
           const bookInfo = document.querySelector('.book-info');
           const bookImage = document.createElement('img');
           const bookTitle = document.createElement('h2');
@@ -80,7 +76,7 @@ export class Book {
           bookInfo.appendChild(bookAuthor);
           bookInfo.appendChild(bookGenre);
           bookInfo.appendChild(bookDescription);
-     
+
      }
 
 
