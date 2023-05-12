@@ -49,7 +49,7 @@ function searchBooksByTitle() {
                } else {
                     searchInput.placeholder = 'Please enter a search term...'
                     setTimeout(() => {
-                         searchInput.placeholder = 'Search for books...'
+                         searchInput.placeholder = 'Search by title, author or ISBN...'
                     }, 3000);
                }
           });

@@ -3,6 +3,8 @@ import { indexFooter } from './footer.js';
 import switchTheme from './theme-switch.js';
 import toggleHamburgerBtn from './navbar-toggle-btn.js';
 
+import {Book} from './classes/Book.js';
+
 //   Render header...
 indexHeader.insert();
 

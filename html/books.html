@@ -25,7 +25,7 @@
                <h1>Search for a book</h1>
                <div class="search-container">
                     <form id="search-form">
-                         <input type="text" id="search-input" placeholder="Search for a book...">
+                         <input type="text" id="search-input" placeholder="Search by title, author or ISBN...">
                          <input type="submit" id="search-btn" value="Search">
                     </form>
                </div>
@@ -38,13 +38,11 @@
                </div>
           </section>
 
-          <section class="popup" id="popup">
-               <div class="popup-content">
-                    <span class="close-btn" id="close-btn">&times;</span>
-                    <h2>Book Title</h2>
-                    <p>Author: John Doe</p>
-                    <p>Genre: Fiction</p>
-                    <p>Description: This is a sample book description.</p>
+          <section class="popup">
+               <span class="close-btn">&times;</span>
+               <div class="book-container">
+                    <figure class="book-cover"></figure>
+                    <div class="book-info"></div>
                </div>
           </section>
 
